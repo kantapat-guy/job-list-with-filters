@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import data from "./data.json";
 import "./App.css";
+import x from '../public/images/icon-remove.svg'
 
 function App() {
 
@@ -45,11 +46,11 @@ function App() {
       <div className="header" style={{ backgroundImage: `url(./images/bg-header-desktop.svg)` }}></div>
       <div className="list-container">
         <div className="select" style={{display: select != "" ? "flex" : "none"}} >
-          <div style={{display: "flex", flexWrap: 'wrap'}}>
+          <div className="left-select" style={{display: "flex", flexWrap: 'wrap'}}>
           {select.map((data) => (
             <div className="select-text">
               <p className="text">{data}</p>
-              <button className="x" onClick={() => removeFilter(data)} ></button>
+              <button className="x" onClick={() => removeFilter(data)} ><img src={x} /></button>
             </div>
           ))}
           </div>
