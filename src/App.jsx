@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="header"></div>
+      <div className="header" style={{ backgroundImage: `url(./images/bg-header-desktop.svg)` }}></div>
       <div className="list-container">
         <div className="select" style={{display: select != "" ? "flex" : "none"}} >
           <div style={{display: "flex", flexWrap: 'wrap'}}>
@@ -58,7 +58,7 @@ function App() {
         {list.map((data) => (
           <div className="job-list" key={data.id} style={{borderLeft: data.featured === true ? "5px solid hsl(180, 29%, 50%)" : "none", }} >
             <div className="left-container">
-              <img className="logo" src={data.logo} alt={`${data.company} logo`} />
+              <image className="logo" style={{ backgroundImage: `url(${data.logo})` }} alt={`${data.company} logo`} />
               <div className="detail-container">
                 <div className="company-text">
                   <p className="company">{data.company}</p>

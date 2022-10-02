@@ -12,7 +12,6 @@ body {
 .header {
   background-color: hsl(179, 29%, 51%);
   height: 156px;
-  background-image: url(./images/bg-header-desktop.svg);
   background-position: center;
 }
 
@@ -26,7 +25,7 @@ body {
 .logo {
   width: 4rem;
   height: 4rem;
-  object-fit: cover;
+  background-size: cover;
 }
 
 .job-list {
