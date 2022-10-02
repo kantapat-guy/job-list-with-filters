@@ -26,7 +26,7 @@ body {
 .logo {
   width: 4rem;
   height: 4rem;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .job-list {
