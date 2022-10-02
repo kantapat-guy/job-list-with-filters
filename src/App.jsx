@@ -58,7 +58,7 @@ function App() {
         {list.map((data) => (
           <div className="job-list" key={data.id} style={{borderLeft: data.featured === true ? "5px solid hsl(180, 29%, 50%)" : "none", }} >
             <div className="left-container">
-              <image className="logo" src={data.logo} alt={`${data.company} logo`} />
+              <img className="logo" src={data.logo} alt={`${data.company} logo`} />
               <div className="detail-container">
                 <div className="company-text">
                   <p className="company">{data.company}</p>
